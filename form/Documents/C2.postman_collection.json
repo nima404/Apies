@@ -1,0 +1,884 @@
+{
+	"info": {
+		"_postman_id": "af2d0391-99ec-4769-b330-d8834931049e",
+		"name": "C2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17171541"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "panel",
+					"item": [
+						{
+							"name": "get logined user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/user/profile/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"profile",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ok",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/user/profile/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"profile",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 06:53:33 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "301"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"full_name\": \"ma\",\n    \"phone\": \"09216527036\",\n    \"mail\": \"\",\n    \"image\": \"/media/default/img.jpg\",\n    \"company_name\": null,\n    \"national_code\": null,\n    \"gender\": null,\n    \"role\": 1,\n    \"wallet\": 0,\n    \"is_active\": true,\n    \"is_block\": false,\n    \"password\": \"pbkdf2_sha256$390000$IRv3LaP2mt8z4Sx6cfweTG$5X8k2Ggx+m3OfBNXw0BIRIHq9GB41Mrt3n2I1PsswDM=\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update loggined user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/user/profile/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"profile",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ok",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/user/profile/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"profile",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 07:00:51 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "301"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"full_name\": \"ma\",\n    \"phone\": \"09216527036\",\n    \"mail\": \"\",\n    \"image\": \"/media/default/img.jpg\",\n    \"company_name\": null,\n    \"national_code\": null,\n    \"gender\": null,\n    \"role\": 1,\n    \"wallet\": 0,\n    \"is_active\": true,\n    \"is_block\": false,\n    \"password\": \"pbkdf2_sha256$390000$IRv3LaP2mt8z4Sx6cfweTG$5X8k2Ggx+m3OfBNXw0BIRIHq9GB41Mrt3n2I1PsswDM=\"\n}"
+								}
+							]
+						},
+						{
+							"name": "patch for update loggined user",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/user/profile/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"profile",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ok",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/user/profile/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"profile",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 07:13:38 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "301"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"full_name\": \"ma\",\n    \"phone\": \"09216527036\",\n    \"mail\": \"\",\n    \"image\": \"/media/default/img.jpg\",\n    \"company_name\": null,\n    \"national_code\": null,\n    \"gender\": null,\n    \"role\": 1,\n    \"wallet\": 0,\n    \"is_active\": true,\n    \"is_block\": false,\n    \"password\": \"pbkdf2_sha256$390000$IRv3LaP2mt8z4Sx6cfweTG$5X8k2Ggx+m3OfBNXw0BIRIHq9GB41Mrt3n2I1PsswDM=\"\n}"
+								}
+							]
+						},
+						{
+							"name": "change password",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "old_password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "87654321",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/user/profile/change-password/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"profile",
+										"change-password",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "fields",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "old_password",
+													"value": "",
+													"type": "text"
+												},
+												{
+													"key": "new_password",
+													"value": "",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/user/profile/change-password/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"profile",
+												"change-password",
+												""
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 07:57:51 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "PUT, PATCH, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "87"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"old_password\": [\n        \"This field is required.\"\n    ],\n    \"new_password\": [\n        \"This field is required.\"\n    ]\n}"
+								},
+								{
+									"name": "change password",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "old_password",
+													"value": "12345678",
+													"type": "text"
+												},
+												{
+													"key": "new_password",
+													"value": "87654321",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/user/profile/change-password/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"profile",
+												"change-password",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 08:08:12 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "PUT, PATCH, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "authentication",
+					"item": [
+						{
+							"name": "token",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "09216527036",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "87654321",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/user/get-jwt-token/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"get-jwt-token",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "fields",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/user/get-token/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"get-token",
+												""
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 03 Oct 2022 13:11:08 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "76"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"phone\": [\n        \"This field is required.\"\n    ],\n    \"password\": [\n        \"This field is required.\"\n    ]\n}"
+								},
+								{
+									"name": "ok",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "phone",
+													"value": "09216527036",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/user/get-jwt-token/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"get-jwt-token",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 06:41:51 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "483"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDk1MjExMSwiaWF0IjoxNjY0ODY1NzExLCJqdGkiOiI3ZjFjOWZjYzQ4Y2U0ZmRhOGMwYmU1NjE5YjljMmM5NSIsInVzZXJfaWQiOjF9.GivW09y79gLVrn532Dcz1UkK4nvrv2tn8ybTEYuTnN4\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY0ODY2MDExLCJpYXQiOjE2NjQ4NjU3MTEsImp0aSI6IjQ1NmU5NDcwYTA4NjRiNmNhNTkwYjAyODViYzAzYTBjIiwidXNlcl9pZCI6MX0.N5Ud0nx66KxEHuT0mFaKDAxgVscSe1Fx4BeEEuypKjk\"\n}"
+								}
+							]
+						},
+						{
+							"name": "static token",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "09216527036",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/user/api-token-auth/",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"api-token-auth",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ok",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "09216527036",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/user/api-token-auth/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"api-token-auth",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 06:32:56 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "52"
+										},
+										{
+											"key": "Vary",
+											"value": "Cookie"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"abd7eb69f608b81174d6bd5146fb528fbadb12a0\"\n}"
+								},
+								{
+									"name": "fields",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/user/api-token-auth/",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"user",
+												"api-token-auth",
+												""
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 04 Oct 2022 06:33:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.10.5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "79"
+										},
+										{
+											"key": "Vary",
+											"value": "Cookie"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"username\": [\n        \"This field is required.\"\n    ],\n    \"password\": [\n        \"This field is required.\"\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY1MzAyOTE2LCJpYXQiOjE2NjQ4NzA5MTYsImp0aSI6ImMzZjI3MjdhNjNhNjQ2NDFhYjJjZjE4N2VmNzQ5ZGU4IiwidXNlcl9pZCI6MX0.iofnuuKE8bvXSoEV8_-gAxapQta3gBVSj3cDEIFidhE",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
